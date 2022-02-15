@@ -1,0 +1,536 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+ 
+
+# Make data base, printed on Tue Feb 15 21:08:20 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# makefile (from `Makefile', line 59)
+OBJ = $(SRC:.c=.o)
+# makefile (from `Makefile', line 23)
+SRC = ft_printf.c ft_is.c ft_addrtoa.c ft_uns_itoa.c ft_utils_str.c ft_parce_tree.c ft_get_func.c ft_write_addr.c ft_write_char.c ft_write_digit.c ft_write_hex_lo.c ft_write_hex_up.c ft_write_percent.c ft_write_str.c ft_write_uns_int.c
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /Users/hyunkkim/mirror_dimension/tidy_up/total
+# makefile
+SHELL = /bin/sh
+# makefile (from `Makefile', line 22)
+RM = rm -f
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# makefile (from `Makefile', line 15)
+CFLAGS = -Wall -Wextra -Werror
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# makefile (from `Makefile', line 16)
+LIB_DIR = ./Libft/
+# environment
+VSCODE_NODE_CACHED_DATA_DIR = /Users/hyunkkim/Library/Application Support/Code/CachedData/6ab598523be7a800d7f3eb4d92d7ab9a66069390
+# environment
+VERBOSE_LOGGING = true
+# environment
+VSCODE_LOGS = /Users/hyunkkim/Library/Application Support/Code/logs/20220215T202043
+# makefile (from `Makefile', line 63)
+OBJS = $(OBJ) $(OBJ_BONUS)
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/zz/zyxvpxvq6csfxvn_n000clhr0034w6/T/vscode-ipc-bdc26f78-c70b-4b3f-a22b-a4ddb8036f76.sock
+# environment
+PATH = /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/munki
+# environment
+VSLS_SESSION_KEEPALIVE_INTERVAL = 20
+# makefile (from `Makefile', line 21)
+ARFLAGS = rcs
+# makefile (from `Makefile', line 20)
+AR = ar
+# environment
+VSCODE_LOG_STACK = false
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# makefile (from `Makefile', line 18)
+LIB = $(LIB_DIR)lib$(LIB_NAME).a
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.RHQ1WPEZr8/Listeners
+# automatic
+%F = $(notdir $%)
+# environment
+PWD = /Users/hyunkkim/mirror_dimension/tidy_up/total
+# environment
+DOTNET_ROOT = /Users/hyunkkim/Library/Application Support/Code/User/globalStorage/ms-vsliveshare.vsliveshare/dotnet-3.1.1
+# environment
+HOME = /Users/hyunkkim
+# default
+MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
+# environment
+LOGNAME = hyunkkim
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# makefile (from `Makefile', line 39)
+SRC_BONUS = ft_printf_bonus.c ft_is_bonus.c ft_addrtoa_bonus.c ft_abs_itoa_bonus.c ft_uns_itoa_bonus.c ft_utils_str_bonus.c ft_utils_flag_bonus.c ft_utils_width_bonus.c ft_utils_precision_bonus.c ft_parce_tree_bonus.c ft_get_func_bonus.c ft_write_addr_bonus.c ft_write_char_bonus.c ft_write_digit_bonus.c ft_write_hex_lo_bonus.c ft_write_hex_up_bonus.c ft_write_percent_bonus.c ft_write_str_bonus.c ft_write_uns_int_bonus.c
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+XPC_FLAGS = 0x0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 1
+# makefile (from `Makefile', line 14)
+CC = gcc
+# default
+MAKE_VERSION := 3.81
+# environment
+AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
+# environment
+USER = hyunkkim
+# makefile
+.DEFAULT_GOAL := libftprintf.a
+# makefile (from `Makefile', line 19)
+INCLUDE = -I ./Libft
+# makefile (from `Makefile', line 13)
+NAME = libftprintf.a
+# environment
+PIPE_LOGGING = true
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/zz/zyxvpxvq6csfxvn_n000clhr0034w6/T/
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /Users/hyunkkim/Library/Application Support/Code/1.39.2-main.sock
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MAIL = hyunkkim@student.42seoul.kr
+# environment
+XPC_SERVICE_NAME = com.microsoft.VSCode.5764
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+__CF_USER_TEXT_ENCODING = 0x19386:0x0:0x0
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+LC_ALL = C
+# makefile (from `Makefile', line 60)
+OBJ_BONUS = $(SRC_BONUS:.c=.o)
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# makefile (from `Makefile', line 17)
+LIB_NAME = ft
+# default
+.INCLUDE_DIRS = /usr/local/include
+# environment
+MAKELEVEL := 0
+# environment
+LANG = C
+# environment
+VSCODE_PID = 61402
+# variable set hash-table stats:
+# Load=76/1024=7%, Rehash=0, Collisions=10/125=8%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 16777225, inode 1291581): 45 files, no impossibilities.
+
+# 45 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+%.o: %.c
+#  commands to execute (from `Makefile', line 73):
+	$(CC) $(CFLAGS) $(INCLUDE) -c $< -o $@
+	
+
+# 1 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+# Not a target:
+ft_is.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_parce_tree.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_write_digit.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_write_uns_int_bonus.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_addrtoa_bonus.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_get_func_bonus.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_write_hex_lo_bonus.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_write_char_bonus.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: libftprintf.a
+#  Phony target (prerequisite of .PHONY).
+#  Command-line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/5=0%
+
+# Not a target:
+ft_abs_itoa_bonus.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.PHONY: all clean fclean re bonus
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_printf.o: ft_printf.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_printf'
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := ft_printf.o
+# automatic
+# % := 
+# automatic
+# * := ft_printf
+# automatic
+# + := ft_printf.c
+# automatic
+# | := 
+# automatic
+# < := ft_printf.c
+# automatic
+# ^ := ft_printf.c
+# automatic
+# ? := ft_printf.c
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=2/15=13%
+#  commands to execute (from `Makefile', line 73):
+	$(CC) $(CFLAGS) $(INCLUDE) -c $< -o $@
+	
+
+# Not a target:
+ft_utils_str_bonus.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-15 21:01:07
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+ft_write_str.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ 
+ft_utils_str.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_utils_flag_bonus.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_addrtoa.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_get_func.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_write_hex_up_bonus.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_write_char.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+Libft/libft.a:
+#  Implicit rule search has not been done.
+#  Last modified 2022-02-15 21:07:50
+#  File has been updated.
+#  Successfully updated.
+#  commands to execute (from `Makefile', line 76):
+	make -C $(LIB_DIR) all
+	
+
+bonus: Libft/libft.a ft_printf.o ft_is.o ft_addrtoa.o ft_uns_itoa.o ft_utils_str.o ft_parce_tree.o ft_get_func.o ft_write_addr.o ft_write_char.o ft_write_digit.o ft_write_hex_lo.o ft_write_hex_up.o ft_write_percent.o ft_write_str.o ft_write_uns_int.o ft_printf_bonus.o ft_is_bonus.o ft_addrtoa_bonus.o ft_abs_itoa_bonus.o ft_uns_itoa_bonus.o ft_utils_str_bonus.o ft_utils_flag_bonus.o ft_utils_width_bonus.o ft_utils_precision_bonus.o ft_parce_tree_bonus.o ft_get_func_bonus.o ft_write_addr_bonus.o ft_write_char_bonus.o ft_write_digit_bonus.o ft_write_hex_lo_bonus.o ft_write_hex_up_bonus.o ft_write_percent_bonus.o ft_write_str_bonus.o ft_write_uns_int_bonus.o
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 93):
+	cp $(LIB) $(NAME)
+	$(AR) $(ARFLAGS) $(NAME) $(OBJ) $(OBJ_BONUS)
+	
+
+fclean: clean
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 87):
+	make -C $(LIB_DIR) fclean
+	$(RM) $(NAME)
+	#make BONUS=1 all
+	
+
+# Not a target:
+ft_write_str_bonus.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_printf.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-15 18:32:58
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+ft_write_hex_lo.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_uns_itoa_bonus.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_write_hex_up.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_utils_width_bonus.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+re: fclean all
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 83):
+	make -C $(LIB_DIR) clean
+	$(RM) $(OBJ) $(OBJ_BONUS)
+	
+
+# Not a target:
+ft_write_addr_bonus.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_write_percent_bonus.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_is_bonus.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_parce_tree_bonus.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_utils_precision_bonus.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_write_digit_bonus.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+libftprintf.a: Libft/libft.a ft_printf.o ft_is.o ft_addrtoa.o ft_uns_itoa.o ft_utils_str.o ft_parce_tree.o ft_get_func.o ft_write_addr.o ft_write_char.o ft_write_digit.o ft_write_hex_lo.o ft_write_hex_up.o ft_write_percent.o ft_write_str.o ft_write_uns_int.o ft_printf_bonus.o ft_is_bonus.o ft_addrtoa_bonus.o ft_abs_itoa_bonus.o ft_uns_itoa_bonus.o ft_utils_str_bonus.o ft_utils_flag_bonus.o ft_utils_width_bonus.o ft_utils_precision_bonus.o ft_parce_tree_bonus.o ft_get_func_bonus.o ft_write_addr_bonus.o ft_write_char_bonus.o ft_write_digit_bonus.o ft_write_hex_lo_bonus.o ft_write_hex_up_bonus.o ft_write_percent_bonus.o ft_write_str_bonus.o ft_write_uns_int_bonus.o
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/5=0%
+#  commands to execute (from `Makefile', line 69):
+	cp $(LIB) $(NAME)
+	$(AR) $(ARFLAGS) $@ $(OBJ) $(OBJ_BONUS)
+	
+
+# Not a target:
+ft_uns_itoa.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_printf_bonus.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_write_addr.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_write_uns_int.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_write_percent.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=46/1024=4%, Rehash=0, Collisions=19/141=13%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Tue Feb 15 21:08:20 2022
+
+ 
