@@ -6,7 +6,7 @@
 #    By: hyunkkim <hyunkkim@student.42seoul.kr>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/15 17:13:44 by hyunkkim          #+#    #+#              #
-#    Updated: 2022/02/15 21:16:57 by hyunkkim         ###   ########seoul.kr   #
+#    Updated: 2022/02/16 17:58:39 by hyunkkim         ###   ########seoul.kr   #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,23 +20,24 @@ INCLUDE=-I ./Libft
 AR=ar
 ARFLAGS=rcs
 RM=rm -f
-SRCS= ft_printf.c \
-		ft_is.c \
-		ft_addrtoa.c \
-		ft_uns_itoa.c \
-		ft_utils_str.c \
-		ft_parce_tree.c \
-		ft_get_func.c \
-		ft_write_addr.c \
-		ft_write_char.c \
-		ft_write_digit.c \
-		ft_write_hex_lo.c \
-		ft_write_hex_up.c \
-		ft_write_percent.c \
-		ft_write_str.c \
-		ft_write_uns_int.c
+CP=cp
+SRC= ft_printf.c \
+	  ft_is.c \
+	  ft_addrtoa.c \
+	  ft_uns_itoa.c \
+	  ft_utils_str.c \
+	  ft_parce_tree.c \
+	  ft_get_func.c \
+	  ft_write_addr.c \
+	  ft_write_char.c \
+	  ft_write_digit.c \
+	  ft_write_hex_lo.c \
+	  ft_write_hex_up.c \
+	  ft_write_percent.c \
+	  ft_write_str.c \
+	  ft_write_uns_int.c
 
-SRCS_BONUS= ft_printf_bonus.c \
+SRC_BONUS= ft_printf_bonus.c \
 			ft_is_bonus.c \
 			ft_addrtoa_bonus.c \
 			ft_abs_itoa_bonus.c \
@@ -56,15 +57,22 @@ SRCS_BONUS= ft_printf_bonus.c \
 			ft_write_str_bonus.c \
 			ft_write_uns_int_bonus.c
 
-OBJS=$(SRCS:.c=.o)
-OBJS_BONUS=$(SRCS_BONUS:.c=.o)
+OBJ=$(SRC:.c=.o)
+OBJ_BONUS=$(SRC_BONUS:.c=.o)
+BONUS=0
+
+ifeq ($(BONUS), 1)
+	OBJS=$(OBJ_BONUS) $(OBJ)
+else
+	OBJS=$(OBJ)
+endif
 
 $(NAME) : $(LIB) $(OBJS)
-	cp $(LIB) $(NAME)
+	$(CP) $(LIB) $(NAME)
 	$(AR) $(ARFLAGS) $@ $(OBJS)
 
 %.o : %.c
-	$(CC) $(CFLAGS) $(INCLUDE) -c $< -o $@
+	$(CC) $(CFLAGS) $(INCLUDE) -c $<
 
 $(LIB) :
 	make -C $(LIB_DIR) all
@@ -75,14 +83,13 @@ re : fclean all
 
 clean :
 	make -C $(LIB_DIR) clean
-	$(RM) $(OBJS) $(OBJS_BONUS)
+	$(RM) $(OBJ) $(OBJ_BONUS)
 
 fclean : clean
 	make -C $(LIB_DIR) fclean
 	$(RM) $(NAME)
 
-bonus: $(LIB) $(OBJS_BONUS)
-	cp $(LIB) $(NAME)
-	$(AR) $(ARFLAGS) $(NAME) $(OBJS_BONUS)
+bonus :
+	make BONUS=1 all
 
 .PHONY: all clean fclean re bonus

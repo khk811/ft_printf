@@ -6,7 +6,7 @@
 /*   By: hyunkkim <hyunkkim@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/15 20:32:54 by hyunkkim          #+#    #+#             */
-/*   Updated: 2022/02/15 20:33:55 by hyunkkim         ###   ########seoul.kr  */
+/*   Updated: 2022/02/16 20:05:02 by hyunkkim         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_apply_width(char **arr, int flag, int width)
 
 	ret = NULL;
 	if (!(*arr))
-		return (ret);
+		return (NULL);
 	width -= ft_strlen(*arr);
 	if ((flag & ZEROPAD) && (flag & NEGATIVE || flag & PLUS || flag & SPACE))
 		width--;

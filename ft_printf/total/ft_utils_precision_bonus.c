@@ -6,7 +6,7 @@
 /*   By: hyunkkim <hyunkkim@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/15 20:32:43 by hyunkkim          #+#    #+#             */
-/*   Updated: 2022/02/15 20:33:57 by hyunkkim         ###   ########seoul.kr  */
+/*   Updated: 2022/02/16 19:52:55 by hyunkkim         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_apply_precision(char **arr, int *flag, int precision)
 
 	ret = NULL;
 	if (!(*arr))
-		return (ret);
+		return (NULL);
 	*flag &= ~ZEROPAD;
 	if (precision == 0 && !(ft_strncmp(*arr, "0", 1)))
 	{

@@ -6,7 +6,7 @@
 /*   By: hyunkkim <hyunkkim@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/15 20:32:39 by hyunkkim          #+#    #+#             */
-/*   Updated: 2022/02/15 20:33:58 by hyunkkim         ###   ########seoul.kr  */
+/*   Updated: 2022/02/16 19:52:44 by hyunkkim         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ char	*ft_apply_sign_flag(char **arr, int flag)
 
 	ret = NULL;
 	if (!(*arr))
-		return (ret);
+		return (NULL);
 	if (flag & NEGATIVE)
 		ret = ft_strjoin("-", *arr);
 	else if (flag & PLUS)

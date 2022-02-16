@@ -6,7 +6,7 @@
 /*   By: hyunkkim <hyunkkim@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/15 20:33:30 by hyunkkim          #+#    #+#             */
-/*   Updated: 2022/02/15 20:33:48 by hyunkkim         ###   ########seoul.kr  */
+/*   Updated: 2022/02/16 21:33:58 by hyunkkim         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ static char	*ft_apply_precision_str(char **arr, int precision)
 {
 	char	*ret;
 
+	if (!(*arr))
+		return (NULL);
 	ret = ft_calloc(precision + 1, sizeof(char));
 	if (ret && precision >= 0)
 		ft_strlcpy(ret, *arr, precision + 1);

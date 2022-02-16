@@ -6,7 +6,7 @@
 /*   By: hyunkkim <hyunkkim@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/15 20:33:02 by hyunkkim          #+#    #+#             */
-/*   Updated: 2022/02/15 20:33:54 by hyunkkim         ###   ########seoul.kr  */
+/*   Updated: 2022/02/16 20:24:00 by hyunkkim         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 int	ft_write_addr(va_list list, int flag, int width, int precision)
 {
 	unsigned long long	addr;
-	            char	*ret_str;
-	             int	ret;
+	              char	*ret_str;
+	               int	ret;
 
 	precision = 0;
 	flag |= HEX;

@@ -6,7 +6,7 @@
 /*   By: hyunkkim <hyunkkim@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/15 17:10:14 by hyunkkim          #+#    #+#             */
-/*   Updated: 2022/02/15 17:11:13 by hyunkkim         ###   ########seoul.kr  */
+/*   Updated: 2022/02/16 19:46:09 by hyunkkim         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_free_str(char **str)
 {
-	if (!str)
+	if (!(*str))
 		return ;
 	free(*str);
 	*str = NULL;

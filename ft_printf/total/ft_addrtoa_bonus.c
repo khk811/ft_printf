@@ -6,7 +6,7 @@
 /*   By: hyunkkim <hyunkkim@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/15 20:31:42 by hyunkkim          #+#    #+#             */
-/*   Updated: 2022/02/15 20:34:02 by hyunkkim         ###   ########seoul.kr  */
+/*   Updated: 2022/02/16 20:19:34 by hyunkkim         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ static int	ft_count_digits_hex(unsigned long long n)
 
 static unsigned long long	ft_make_divisor_hex(unsigned long long n)
 {
-	             int	i;
+	               int	i;
 	unsigned long long	ret;
 
 	ret = 1;
@@ -40,8 +40,8 @@ static unsigned long long	ft_make_divisor_hex(unsigned long long n)
 
 char	*ft_addrtoa(unsigned long long n)
 {
-	            char	*ret;
-	             int	i;
+	              char	*ret;
+	               int	i;
 	unsigned long long	divisor;
 
 	i = 0;

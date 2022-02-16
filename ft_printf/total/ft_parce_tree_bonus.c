@@ -6,7 +6,7 @@
 /*   By: hyunkkim <hyunkkim@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/15 20:32:13 by hyunkkim          #+#    #+#             */
-/*   Updated: 2022/02/15 20:34:00 by hyunkkim         ###   ########seoul.kr  */
+/*   Updated: 2022/02/16 20:12:47 by hyunkkim         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,7 +74,7 @@ int	ft_parce_tree(const char **s, va_list list)
 	int	precision;
 	int	ret;
 
-	ret = 0;
+	ret = -1;
 	flag = ft_get_flag(s);
 	width = ft_get_width(s);
 	precision = ft_get_precision(s);

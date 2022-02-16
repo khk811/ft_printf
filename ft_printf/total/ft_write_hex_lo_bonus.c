@@ -6,7 +6,7 @@
 /*   By: hyunkkim <hyunkkim@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/15 20:33:18 by hyunkkim          #+#    #+#             */
-/*   Updated: 2022/02/15 20:33:51 by hyunkkim         ###   ########seoul.kr  */
+/*   Updated: 2022/02/16 20:58:06 by hyunkkim         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 int	ft_write_hex_lo(va_list list, int flag, int width, int precision)
 {
-	 int	arg_num;
-	char	*ret_str;
-	 int	ret;
+	unsigned int	arg_num;
+	        char	*ret_str;
+	         int	ret;
 
-	arg_num = va_arg(list, int);
 	flag |= HEX;
+	arg_num = va_arg(list, unsigned int);
 	ret_str = ft_uns_itoa(arg_num, flag);
 	if (precision > -1)
 		ret_str = ft_apply_precision(&ret_str, &flag, precision);
